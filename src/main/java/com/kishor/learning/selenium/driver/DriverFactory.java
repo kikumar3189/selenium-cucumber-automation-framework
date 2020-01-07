@@ -30,7 +30,7 @@ public class DriverFactory {
 		return driver;
 	}
 	
-	public static WebDriver setDriver() throws MalformedURLException {
+	private static WebDriver setDriver() throws MalformedURLException {
 		switch(System.getProperty("browser")) {
 			case "chrome":
 				DriverFactory.setChromeOptions();
@@ -38,7 +38,7 @@ public class DriverFactory {
 				if(os.contains("win")) {
 					logger.info("Initialising chrome driver for windows...");
 					System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-					driver = new ChromeDriver();
+					driver = new ChromeDriver(chromeOptions);
 					
 				}else {
 					logger.info("Initialising chrome driver for linux...");

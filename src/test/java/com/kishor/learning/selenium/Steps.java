@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,6 +36,10 @@ public class Steps {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
 		WebElement searchBox = driver.findElement(By.name("q"));
 		Assert.assertTrue( "Search box is not displayed", searchBox.isDisplayed());
+		searchBox.sendKeys("Selenium tutorials");
+		Thread.sleep(2000);
+		searchBox.sendKeys(Keys.RETURN);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("center_col")));
 		driver.close();
 	}
 }
