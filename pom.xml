@@ -20,6 +20,7 @@
 		<browser>IE</browser>
 		<headless>false</headless>
 		<gridUrl>http://localhost:9515</gridUrl>
+		<appUrl>http://automationpractice.com</appUrl>
 	</properties>
 
 	<dependencies>
@@ -38,20 +39,20 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>4.7.0</version>
+			<version>4.8.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>4.7.0</version>
+			<version>4.8.0</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-spring -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-spring</artifactId>
-			<version>4.7.0</version>
+			<version>4.8.0</version>
 		</dependency>
 
 
@@ -96,6 +97,7 @@
 						<browser>${browser}</browser>
 						<headless>${headless}</headless>
 						<gridUrl>${gridUrl}</gridUrl>
+						<appUrl>${appUrl}</appUrl>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

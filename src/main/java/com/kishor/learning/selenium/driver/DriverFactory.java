@@ -22,6 +22,7 @@ public class DriverFactory {
 		if(driver == null) {
 			try {
 				setDriver();
+				driver.get(System.getProperty("appUrl"));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -30,7 +31,7 @@ public class DriverFactory {
 		return driver;
 	}
 	
-	private static WebDriver setDriver() throws MalformedURLException {
+	private static void setDriver() throws MalformedURLException {
 		switch(System.getProperty("browser")) {
 			case "chrome":
 				DriverFactory.setChromeOptions();
@@ -39,6 +40,7 @@ public class DriverFactory {
 					logger.info("Initialising chrome driver for windows...");
 					System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 					driver = new ChromeDriver(chromeOptions);
+					driver.manage().window().maximize();
 					
 				}else {
 					logger.info("Initialising chrome driver for linux...");
@@ -55,13 +57,12 @@ public class DriverFactory {
 				driver = new InternetExplorerDriver();
 				break;
 			default:
-				logger.info("No valid browser found, defaulting to chrome");
+				logger.info("Invalid browser specified, defaulting to chrome");
 				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 				driver = new ChromeDriver();
 				break;
 		}
 		
-		return driver;
 	}
 	
 	private static void setChromeOptions() {
