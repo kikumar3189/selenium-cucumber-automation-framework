@@ -55,6 +55,7 @@ public class DriverFactory {
 				logger.info("Initialising IE driver...");
 				System.setProperty("webdriver.ie.driver", "src/main/resources/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
+				//Not implemented yet, still work in progress
 				break;
 			default:
 				logger.info("Invalid browser specified, defaulting to chrome");
