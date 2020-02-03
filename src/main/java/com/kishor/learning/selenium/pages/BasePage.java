@@ -11,11 +11,13 @@ public class BasePage {
 	
 	WebDriver driver;
 	WebDriverWait wait;
+	WebDriverWait shortWait;
 	 
 	
 	public BasePage() {
 		driver = DriverFactory.getDriver();
 		wait = new WebDriverWait(driver, 10);
+		shortWait = new WebDriverWait(driver, 5);
 	}
 
 }

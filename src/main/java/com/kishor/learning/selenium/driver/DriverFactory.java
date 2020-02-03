@@ -59,7 +59,7 @@ public class DriverFactory {
 			default:
 				logger.info("Invalid browser specified, defaulting to chrome");
 				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(chromeOptions);
 				break;
 		}
 		

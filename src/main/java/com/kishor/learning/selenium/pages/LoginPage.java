@@ -1,5 +1,6 @@
 package com.kishor.learning.selenium.pages;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -36,8 +37,8 @@ public class LoginPage extends BasePage{
 		try {
 			homePage.isHomePageDisplayed();
 			logger.info("User already logged in.");
-		}catch(Exception ex) {
-//			driver.get(appUrl);
+		}catch(TimeoutException ex) {
+			//Perform login if sign out link is not displayed.
 			wait.until(ExpectedConditions.elementToBeClickable(signInLink));
 			signInLink.click();
 			wait.until(ExpectedConditions.elementToBeClickable(username));

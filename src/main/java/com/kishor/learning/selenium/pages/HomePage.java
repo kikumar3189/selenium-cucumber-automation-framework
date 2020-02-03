@@ -47,7 +47,7 @@ public class HomePage extends BasePage {
 	}
 	
 	public boolean isHomePageDisplayed() {
-		wait.until(ExpectedConditions.elementToBeClickable(signOutLink));
+		shortWait.until(ExpectedConditions.elementToBeClickable(signOutLink));
 		return signOutLink.isDisplayed();
 	}
 	
