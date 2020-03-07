@@ -17,7 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<browser>IE</browser>
+		<browser>chrome</browser>
 		<headless>false</headless>
 		<gridUrl>http://localhost:9515</gridUrl>
 		<appUrl>http://automationpractice.com</appUrl>

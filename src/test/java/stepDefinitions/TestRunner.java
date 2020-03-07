@@ -1,4 +1,4 @@
-package com.kishor.learning.selenium;
+package stepDefinitions;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
@@ -14,6 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 @SpringBootTest
 @CucumberOptions(
 features = "src/test/resources/bdd",
+glue = "stepDefinitions",
+//tags = "@Login",
 plugin = {"pretty", "html:target/cucumber"},
 monochrome = true)
 public class TestRunner {

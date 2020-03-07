@@ -1,21 +1,29 @@
-package com.kishor.learning.selenium;
+package stepDefinitions;
 
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
+
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.kishor.learning.selenium.SeleniumCucumberFrameworkApplication;
+import com.kishor.learning.selenium.driver.DriverFactory;
 import com.kishor.learning.selenium.pages.HomePage;
 import com.kishor.learning.selenium.pages.LoginPage;
 import com.kishor.learning.selenium.pages.MyAccount;
 import com.kishor.learning.selenium.pages.OrderSummaryPage;
+import com.kishor.learning.selenium.repository.ObjectRepository;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -31,8 +39,18 @@ public class Steps {
 	private HomePage homePage;
 	private OrderSummaryPage orderSummaryPage;
 	private MyAccount myAccount;
+	@Autowired
+	protected ObjectRepository objectRepo;
 	private static final Logger logger = LoggerFactory.getLogger(Steps.class);
 	HashMap<String, String> variables = new HashMap<>();
+	protected WebDriverWait wait ;
+	protected WebDriver driver;
+	
+	@PostConstruct
+	private void init() {
+		driver = DriverFactory.getDriver();
+		wait = new WebDriverWait(driver, 10000);
+	}
 	
 	
 	@When("user logs in by entering below credentials")
@@ -45,6 +63,9 @@ public class Steps {
 	    Assert.assertTrue("Login Error: Home page is not displayed", homePage.isHomePageDisplayed());
 	    
 	}
+	
+	
+
 
 
 	@When("user navigates to TShirts section")

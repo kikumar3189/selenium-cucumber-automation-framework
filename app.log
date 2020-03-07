@@ -1,13 +1,151 @@
-2020-02-03 05:52:17.942  INFO 5420 --- [main] com.kishor.learning.selenium.Steps       : Starting Steps on KishorPC with PID 5420 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
-2020-02-03 05:52:17.995 DEBUG 5420 --- [main] com.kishor.learning.selenium.Steps       : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2020-02-03 05:52:17.995  INFO 5420 --- [main] com.kishor.learning.selenium.Steps       : No active profile set, falling back to default profiles: default
-2020-02-03 05:52:18.972 DEBUG 5420 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
-2020-02-03 05:52:18.987  INFO 5420 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
-2020-02-03 05:52:23.494  INFO 5420 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
-2020-02-03 05:52:34.548  INFO 5420 --- [main] com.kishor.learning.selenium.Steps       : Started Steps in 17.211 seconds (JVM running for 19.687)
-2020-02-03 05:52:42.291  INFO 5420 --- [main] c.k.learning.selenium.pages.LoginPage    : Logging in as kishork163@gmail.com
-2020-02-03 05:52:48.522  INFO 5420 --- [main] c.k.learning.selenium.pages.HomePage     : Locating item with XPATH //div[@id="center_column"]//a[@title="Faded Short Sleeve T-shirts" and @class="product-name"]
-2020-02-03 05:53:01.221  INFO 5420 --- [main] c.k.learning.selenium.pages.HomePage     : Locating payment method with XPATH //*[@id="HOOK_PAYMENT"]//a[@title="Pay by bank wire"]
-2020-02-03 05:53:05.625  INFO 5420 --- [main] c.k.learning.selenium.pages.HomePage     : Order reference is GAJACMEZM
-2020-02-03 05:53:07.458  INFO 5420 --- [main] com.kishor.learning.selenium.Steps       : Validating order GAJACMEZM
-2020-02-03 05:53:07.854  INFO 5420 --- [main] c.k.learning.selenium.pages.LoginPage    : User already logged in.
+2020-03-07 13:02:30.932  INFO 15408 --- [main] stepDefinitions.BaseSteps                : Starting BaseSteps on KishorPC with PID 15408 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
+2020-03-07 13:02:30.959  INFO 15408 --- [main] stepDefinitions.BaseSteps                : No active profile set, falling back to default profiles: default
+2020-03-07 13:02:33.878 DEBUG 15408 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-07 13:02:33.897  INFO 15408 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-07 13:02:40.288  INFO 15408 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-07 13:02:54.673  INFO 15408 --- [main] stepDefinitions.BaseSteps                : Started BaseSteps in 24.848 seconds (JVM running for 29.041)
+2020-03-07 13:02:54.756  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-07 13:02:57.028  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-07 13:02:57.547  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-07 13:02:57.819  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-07 13:02:59.546  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:02:59.651  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:03:00.939  INFO 15408 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-07 13:13:58.611  INFO 7412 --- [main] stepDefinitions.BaseSteps                : Starting BaseSteps on KishorPC with PID 7412 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
+2020-03-07 13:13:58.616  INFO 7412 --- [main] stepDefinitions.BaseSteps                : No active profile set, falling back to default profiles: default
+2020-03-07 13:13:59.664 DEBUG 7412 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-07 13:13:59.673  INFO 7412 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-07 13:14:03.478  INFO 7412 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-07 13:14:14.195  INFO 7412 --- [main] stepDefinitions.BaseSteps                : Started BaseSteps in 16.054 seconds (JVM running for 18.182)
+2020-03-07 13:14:14.293  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-07 13:14:15.634  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-07 13:14:16.844  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-07 13:14:17.127  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-07 13:14:18.780  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:14:18.906  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:14:20.775  INFO 7412 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-07 13:16:57.030  WARN 7412 --- [main] o.o.s.support.ui.ExpectedConditions      : WebDriverException thrown by findElement(By.xpath: //*[@id=\"center_column\"]//a[@title=\"Information\"])
+
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'KISHORPC', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Kishor\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56440}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da3f71a44d850489df502935316aef81
+*** Element info: {Using=xpath, value=//*[@id=\"center_column\"]//a[@title=\"Information\"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348) ~[selenium-api-3.14.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310) ~[selenium-remote-driver-3.14.0.jar:na]
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895) [selenium-support-3.14.0.jar:na]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44) [selenium-support-3.14.0.jar:na]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183) [selenium-support-3.14.0.jar:na]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180) [selenium-support-3.14.0.jar:na]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260) [selenium-support-3.14.0.jar:na]
+	at com.kishor.learning.selenium.context.WebPageContext.findWebPageElement(WebPageContext.java:59) [classes/:na]
+	at stepDefinitions.ClickActionSteps.clicks_button(ClickActionSteps.java:22) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_211]
+	at cucumber.runtime.Utils$1.call(Utils.java:26) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runtime.Utils.invoke(Utils.java:20) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57) [cucumber-java-4.8.0.jar:na]
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runner.TestStep.run(TestStep.java:50) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runner.TestCase.run(TestCase.java:46) [cucumber-core-4.8.0.jar:na]
+	at cucumber.runner.Runner.runPickle(Runner.java:50) [cucumber-core-4.8.0.jar:na]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146) [cucumber-junit-4.8.0.jar:na]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68) [cucumber-junit-4.8.0.jar:na]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23) [cucumber-junit-4.8.0.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144) [cucumber-junit-4.8.0.jar:na]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65) [cucumber-junit-4.8.0.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174) [cucumber-junit-4.8.0.jar:na]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-3.0.0-M3.jar:3.0.0-M3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-3.0.0-M3.jar:3.0.0-M3]
+
+2020-03-07 13:19:13.124  INFO 15268 --- [main] stepDefinitions.BaseSteps                : Starting BaseSteps on KishorPC with PID 15268 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
+2020-03-07 13:19:13.129  INFO 15268 --- [main] stepDefinitions.BaseSteps                : No active profile set, falling back to default profiles: default
+2020-03-07 13:19:14.194 DEBUG 15268 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-07 13:19:14.205  INFO 15268 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-07 13:19:18.105  INFO 15268 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-07 13:19:26.857  INFO 15268 --- [main] stepDefinitions.BaseSteps                : Started BaseSteps in 14.194 seconds (JVM running for 16.18)
+2020-03-07 13:19:26.935  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-07 13:19:29.072  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-07 13:19:29.561  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-07 13:19:29.845  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-07 13:19:31.407  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:19:31.507  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 13:19:32.644  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-07 13:19:34.618  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: firstName
+2020-03-07 13:19:34.980  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: currentPassword
+2020-03-07 13:19:35.244  INFO 15268 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: save
+2020-03-07 14:51:52.670  INFO 9480 --- [main] stepDefinitions.BaseSteps                : Starting BaseSteps on KishorPC with PID 9480 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
+2020-03-07 14:51:52.670  INFO 9480 --- [main] stepDefinitions.BaseSteps                : No active profile set, falling back to default profiles: default
+2020-03-07 14:51:53.717 DEBUG 9480 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-07 14:51:53.721  INFO 9480 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-07 14:51:57.513  INFO 9480 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-07 14:52:08.898  INFO 9480 --- [main] stepDefinitions.BaseSteps                : Started BaseSteps in 16.697 seconds (JVM running for 18.679)
+2020-03-07 14:52:08.959  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-07 14:52:10.328  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-07 14:52:11.516  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-07 14:52:11.750  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-07 14:52:13.679  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 14:52:13.817  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 14:52:14.955  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-07 14:52:16.301  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: firstName
+2020-03-07 14:52:16.656  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: currentPassword
+2020-03-07 14:52:16.916  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: save
+2020-03-07 14:52:18.524  INFO 9480 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 15:04:52.981  INFO 7308 --- [main] stepDefinitions.BaseSteps                : Starting BaseSteps on KishorPC with PID 7308 (started by Kishor in C:\Users\Kishor\projects\selenium-cucumber-framework)
+2020-03-07 15:04:52.985  INFO 7308 --- [main] stepDefinitions.BaseSteps                : No active profile set, falling back to default profiles: default
+2020-03-07 15:04:54.641 DEBUG 7308 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-07 15:04:54.658  INFO 7308 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-07 15:04:59.617  INFO 7308 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-07 15:05:08.229  INFO 7308 --- [main] stepDefinitions.BaseSteps                : Started BaseSteps in 16.1 seconds (JVM running for 19.523)
+2020-03-07 15:05:08.381  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-07 15:05:10.653  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-07 15:05:11.433  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-07 15:05:11.815  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-07 15:05:13.475  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 15:05:13.910  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 15:05:15.020  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-07 15:05:16.534  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: firstName
+2020-03-07 15:05:16.953  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: currentPassword
+2020-03-07 15:05:17.357  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: save
+2020-03-07 15:05:18.555  INFO 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-07 15:05:18.563 DEBUG 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Element accountName not found in page myAccount
+2020-03-07 15:05:18.566 DEBUG 7308 --- [main] c.k.l.selenium.context.WebPageContext    : Searching accountName in Default page

@@ -9,14 +9,23 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class DriverFactory {
 	
 	private static WebDriver driver;
+	private static WebDriverWait wait;
 	private static final Logger logger = LoggerFactory.getLogger(DriverFactory.class);
 	private static ChromeOptions chromeOptions;
+	
+	public static WebDriverWait getWait() {
+		if(wait == null) {
+			wait = new WebDriverWait(getDriver(), 10);
+		}
+		return wait;
+	}
 	
 	public static WebDriver getDriver()  {
 		if(driver == null) {
@@ -31,8 +40,10 @@ public class DriverFactory {
 		return driver;
 	}
 	
+	@SuppressWarnings("deprecation")
 	private static void setDriver() throws MalformedURLException {
-		switch(System.getProperty("browser")) {
+		
+		switch(System.getProperty("browser").toLowerCase()) {
 			case "chrome":
 				DriverFactory.setChromeOptions();
 				String os = System.getProperty("os.name").toLowerCase();
@@ -51,10 +62,11 @@ public class DriverFactory {
 				}
 				
 				break;
-			case "IE":
+			case "ie":
 				logger.info("Initialising IE driver...");
 				System.setProperty("webdriver.ie.driver", "src/main/resources/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
+				//Still work in progress
 				break;
 			default:
 				logger.info("Invalid browser specified, defaulting to chrome");

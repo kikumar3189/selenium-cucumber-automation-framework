@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+<page name="Default">
+<!-- Default page to contain common elements -->
+<uiElement name="accountName" locatorType="xpath"> <locator>//*[@id="header"]//a[@title="View my customer account"]/span</locator></uiElement>
+</page>
+<page name="Landing">
+	<uiElement name="signIn" locatorType="id">
+		<locator>value</locator>
+	</uiElement>
+	
+	
+	
+</page>
+<page name="Login">
+<uiElement name="username" locatorType="id"> <locator>email</locator></uiElement>
+<uiElement name="password" locatorType="id"> <locator>passwd</locator></uiElement>
+<uiElement name="submit" locatorType="id"> <locator>SubmitLogin</locator></uiElement>
+<uiElement name="signIn" locatorType="linkText"> <locator>Sign in</locator></uiElement>
+</page>
+
+<page name="Home">
+<uiElement name="accountName" locatorType="xpath"> <locator>//*[@id="header"]//a[@title="View my customer account"]/span</locator></uiElement>
+</page>
+<page name="myAccount">
+<uiElement name="firstName" locatorType="id"> <locator>firstname</locator></uiElement>
+<uiElement name="currentPassword" locatorType="id"> <locator>old_passwd</locator></uiElement>
+<uiElement name="save" locatorType="name"> <locator>submitIdentity</locator></uiElement>
+<uiElement name="signIn" locatorType="linkText"> <locator>Sign in</locator></uiElement>
+<uiElement name="personalInformation" locatorType="xpath"> <locator>//*[@id="center_column"]//a[@title="Information"]</locator></uiElement>
+
+</page>
+
+
+
+
+</pages>
