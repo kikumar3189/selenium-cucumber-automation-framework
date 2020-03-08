@@ -1,0 +1,48 @@
+2020-03-08 13:54:21.460  INFO 13544 --- [main] stepDefinitions.Steps                    : Starting Steps on KishorPC with PID 13544 (started by Kishor in C:\users\kishor\projects\selenium-cucumber-framework)
+2020-03-08 13:54:21.460  INFO 13544 --- [main] stepDefinitions.Steps                    : No active profile set, falling back to default profiles: default
+2020-03-08 13:54:23.757 DEBUG 13544 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-08 13:54:23.773  INFO 13544 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-08 13:54:30.183  INFO 13544 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-08 13:54:40.902  INFO 13544 --- [main] stepDefinitions.Steps                    : Started Steps in 20.754 seconds (JVM running for 24.988)
+2020-03-08 13:54:40.998  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-08 13:54:43.710  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-08 13:54:44.250  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-08 13:54:44.502  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-08 13:54:47.299  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 13:54:47.399  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 13:54:48.935  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-08 13:54:50.511  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: firstName
+2020-03-08 13:54:50.803  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: currentPassword
+2020-03-08 13:54:51.111  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: save
+2020-03-08 13:54:52.723  INFO 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 13:54:52.731 DEBUG 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Element accountName not found in page myAccount
+2020-03-08 13:54:52.731 DEBUG 13544 --- [main] c.k.l.selenium.context.WebPageContext    : Searching accountName in Default page
+2020-03-08 13:54:53.046  INFO 13544 --- [main] c.k.learning.selenium.pages.LoginPage    : User already logged in.
+2020-03-08 13:54:55.882  INFO 13544 --- [main] c.k.learning.selenium.pages.HomePage     : Locating item with XPATH //div[@id="center_column"]//a[@title="Faded Short Sleeve T-shirts" and @class="product-name"]
+2020-03-08 13:55:08.458  INFO 13544 --- [main] c.k.learning.selenium.pages.HomePage     : Locating payment method with XPATH //*[@id="HOOK_PAYMENT"]//a[@title="Pay by bank wire"]
+2020-03-08 13:55:14.111  INFO 13544 --- [main] c.k.learning.selenium.pages.HomePage     : Order reference is PLDJNEHXM
+2020-03-08 13:55:16.359  INFO 13544 --- [main] stepDefinitions.Steps                    : Validating order PLDJNEHXM
+2020-03-08 14:13:24.983  INFO 1444 --- [main] stepDefinitions.Steps                    : Starting Steps on KishorPC with PID 1444 (started by Kishor in C:\users\kishor\projects\selenium-cucumber-framework)
+2020-03-08 14:13:24.999  INFO 1444 --- [main] stepDefinitions.Steps                    : No active profile set, falling back to default profiles: default
+2020-03-08 14:13:26.077 DEBUG 1444 --- [main] c.k.l.selenium.driver.DriverFactory      : Setting chrome options...
+2020-03-08 14:13:26.093  INFO 1444 --- [main] c.k.l.selenium.driver.DriverFactory      : Initialising chrome driver for windows...
+2020-03-08 14:13:29.963  INFO 1444 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2020-03-08 14:13:39.159  INFO 1444 --- [main] stepDefinitions.Steps                    : Started Steps in 14.66 seconds (JVM running for 16.595)
+2020-03-08 14:13:39.267  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: signIn
+2020-03-08 14:13:41.686  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: username
+2020-03-08 14:13:42.150  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: password
+2020-03-08 14:13:42.446  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: submit
+2020-03-08 14:13:44.218  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 14:13:44.326  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 14:13:45.610  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: personalInformation
+2020-03-08 14:13:47.959  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: firstName
+2020-03-08 14:13:48.259  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: currentPassword
+2020-03-08 14:13:48.539  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: save
+2020-03-08 14:13:50.091  INFO 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Finding element: accountName
+2020-03-08 14:13:50.095 DEBUG 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Element accountName not found in page myAccount
+2020-03-08 14:13:50.099 DEBUG 1444 --- [main] c.k.l.selenium.context.WebPageContext    : Searching accountName in Default page
+2020-03-08 14:13:50.365  INFO 1444 --- [main] c.k.learning.selenium.pages.LoginPage    : User already logged in.
+2020-03-08 14:13:53.259  INFO 1444 --- [main] c.k.learning.selenium.pages.HomePage     : Locating item with XPATH //div[@id="center_column"]//a[@title="Faded Short Sleeve T-shirts" and @class="product-name"]
+2020-03-08 14:14:05.614  INFO 1444 --- [main] c.k.learning.selenium.pages.HomePage     : Locating payment method with XPATH //*[@id="HOOK_PAYMENT"]//a[@title="Pay by bank wire"]
+2020-03-08 14:14:10.663  INFO 1444 --- [main] c.k.learning.selenium.pages.HomePage     : Order reference is HGXXPCLHO
+2020-03-08 14:14:12.594  INFO 1444 --- [main] stepDefinitions.Steps                    : Validating order HGXXPCLHO

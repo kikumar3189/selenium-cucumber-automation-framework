@@ -23,10 +23,6 @@ Feature: Automation practice project using Selenium Cucumber and Maven
   	And clicks "save" button
   	Then "accountName" should be displayed as "Ravi Kumar"
   	
-    #When user navigates to my account
-    #And user updates first name as "Kishor" using password "Kishor@123"
-    #Then validate account name is "Kishor Kumar"
-  
   
   @OrderTShirt
   Scenario: User orders a new T shirt and validates in order history
